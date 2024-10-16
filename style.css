@@ -56,10 +56,8 @@
   
   .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgb(34, 29, 99);
   }
   
   .sub-container {
@@ -76,7 +74,7 @@
   }
   
   a {
-    color: var(--clr-accent-100);
+    color: black
   }
   
   .about {
@@ -99,8 +97,7 @@
   }
   
   .introduction_about h1 {
-    color: white;
-    background-color: blanchedalmond;
+    color: rgb(3, 3, 3);
   }
   
   .container-skills {
@@ -132,6 +129,10 @@
       position: fixed;
       bottom: 0;
     }
+
+    .introduction_about h1 {
+      margin-top: calc(var(--margin-primary) * 7);
+    }
   
     .social-media {
       margin: var(--margin-primary);
@@ -156,5 +157,66 @@
       margin-bottom: var(--margin-primary);
       margin-left: var(--margin-primary);
     }
+
+    .sticky-footer {
+      background-color: #333;
+      color: white;
+      position: absolute; /* Change to absolute */
+      width: auto; /* Adjust width to fit content */
+      padding: 10px 20px;
+      bottom: 0;
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjust position to truly center */
+      margin-left: 0;
+    }
+
+
   }
+
+  .sticky-footer {
+    background-color: transparent;
+    color: white;
+    position: absolute; /* Change to absolute */
+    bottom: 0;
+    left: 0; /* Align to the left */
+    width: auto; /* Adjust width to fit content */
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  gap: 30px; /* Spacing between icons */
+}
+
+.social-icons a {
+  color: black;
+}
+
+
+@media (max-width: 1000px) {
+  .sticky-footer {
+    background-color: #333;
+    color: white;
+    position: absolute; /* Change to absolute */
+    width: auto; /* Adjust width to fit content */
+    padding: 10px 20px;
+    bottom: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position to truly center */
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+}
+
+.logo {
+  width: 150px;
+  margin-left: 20px;
+}
   
