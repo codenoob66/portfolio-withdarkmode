@@ -1,0 +1,160 @@
+:root {
+    --margin-primary: 10px;
+    --primary-color: green;
+    --primary-padding: 16px;
+    --box-width: 50%;
+    --clr-primary-400: hsl(228, 39, 23%);
+    --clr-neutral-100: hsl(232, 12%, 13%);
+    --clr-accent-400: hsl(12, 88%, 59%);
+    --clr-accent-100: hsl(13, 100%, 96%);
+    --clr-neutral-900: hsl(0 0% 0%);
+  }
+  
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  * {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1,
+  p {
+    text-align: center;
+    margin: var(--margin-primary);
+  }
+  
+  .introduction {
+    display: flex;
+  }
+  
+  .home-img {
+    border-radius: 50%;
+    padding: var(--primary-padding);
+  }
+  
+  .home-img img {
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    border-radius: 50%;
+    object-fit: scale-down;
+  }
+  
+  .Main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: var(--margin-primary);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(34, 29, 99);
+  }
+  
+  .sub-container {
+    margin: 5px;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-list li {
+    margin: var(--margin-primary);
+  }
+  
+  a {
+    color: var(--clr-accent-100);
+  }
+  
+  .about {
+    margin-top: var(--margin-primary);
+    margin-bottom: calc(var(--margin-primary) * 5); /* Double the margin */
+  }
+  
+  .nav-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(34, 29, 99);
+    color: var(--clr-accent-100);
+    width: 100%;
+  }
+  
+  .introduction_about {
+    display: flex;
+    align-items: center;
+  }
+  
+  .introduction_about h1 {
+    color: white;
+    background-color: blanchedalmond;
+  }
+  
+  .container-skills {
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .skills-icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out the icons */
+    margin-top: var(--margin-primary); /* Add space above the icons */
+  }
+  
+  .skill {
+    text-align: center; /* Center the text below each icon */
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 242, 236);
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 500px) {
+    .nav-footer {
+      flex-direction: column; /* Change layout to column */
+      align-items: center; /* Center items */
+      justify-content: center; /* Center items */
+      padding: 10px; /* Optional: adjust padding */
+      position: fixed;
+      bottom: 0;
+    }
+  
+    .social-media {
+      margin: var(--margin-primary);
+    }
+  
+    .nav-footer a {
+      /* If you have links, style them here */
+      margin: 5px 0; /* Add margin for spacing */
+    }
+  
+    .skills-icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      margin-top: var(--margin-primary);
+    }
+  
+    .skill {
+      text-align: center;
+      display: flex;
+      margin-bottom: var(--margin-primary);
+      margin-left: var(--margin-primary);
+    }
+  }
+  
