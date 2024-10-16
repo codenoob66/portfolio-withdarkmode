@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Codes By Raf</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <a href="">
+          <img
+            src="assets/Untitled design (1).svg"
+            alt="Your logo"
+            class="logo"
+          />
+        </a>
+        <nav class="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><i class="fa-solid fa-moon fa-lg"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="about">
+      <div class="introduction" style="display: flex; justify-content: center">
+        <div class="home-img">
+          <img
+            src="assets/424566645_25085230287742057_8697743017809633150_n.jpg"
+            alt="Rafael"
+            class="profile-picture"
+          />
+        </div>
+        <div class="introduction_about">
+          <h1>
+            Hi I’m Rafael an aspiring front end Web developer from the
+            Philippines.
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="Skills">
+      <div class="container-skills">
+        <div>
+          <h1 style="text-align: left">
+            <i class="fa-solid fa-user-ninja" style="margin-right: 16px"></i
+            >Skills and Technologies
+          </h1>
+          <p>
+            Using a combination of cutting-edge technologies and reliable
+            open-source software, I build user-focused, performant apps and
+            websites for smartphones, tablets, and desktops.
+          </p>
+        </div>
+        <div class="skills-icons">
+          <div class="skill">
+            <i
+              class="fa-brands fa-js fa-2xl"
+              style="color: #ffd43b"
+              title="JavaScript"
+            ></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <i
+              class="fa-brands fa-html5 fa-2xl"
+              style="color: #e34f26"
+              title="HTML"
+            ></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <i
+              class="fa-brands fa-css3-alt fa-2xl"
+              style="color: #1572b6"
+              title="CSS"
+            ></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-wordpress fa-2xl"></i>
+            <p>Wordpress</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="achievements">
+      <div class="achievements-container">
+        <h1><i class="fa-solid fa-award" style="margin-right: 16px"></i>My achievements</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquid sit fuga architecto fugiat, fugit corporis sequi cupiditate numquam aliquam odit repellendus ex accusamus officiis, illum ipsam aperiam dolore corrupti!</p>
+      </div>
+    </section>
+    <footer class="sticky-footer">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f fa-xl"></i
+        ></a>
+        <a href="#" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram fa-xl" style="color: #74c0fc"></i
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin fa-xl" style="color: #74c0fc"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
