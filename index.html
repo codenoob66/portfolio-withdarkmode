@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -8,12 +8,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
     <title>Codes By Raf</title>
-  </head>
-  <body style="background-color: #19376D;">
+</head>
+<body>
     <header class="primary-header">
-      <div class="container" style= "background-color: #19376D;">
+      <div class="container">
         <a href="">
           <img
             src="assets/Untitled design (1).svg"
@@ -25,7 +24,11 @@
           <ul role="list" class="nav-list">
             <li><a href="#">Contact</a></li>
             <li><a href="#">Projects</a></li>
-            <li><button><i class="fa-solid fa-moon fa-lg" id="drkMode"></i></button></li>
+            <li>
+              <button id="night-mode-toggle">
+                <i class="fa-solid fa-moon fa-lg"></i>
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -40,22 +43,21 @@
           />
         </div>
         <div class="introduction_about">
-          <h1 style="color: #A5D7E8;">
-            Hi I’m Rafael an aspiring front end Web developer from the
-            Philippines.
-          </h1>
+          <h1>
+            Hi I’m Rafael, an aspiring front-end web developer from the Philippines.<span class="caret">|</span>
+        </h1>
+        
         </div>
       </div>
     </section>
-
     <section class="Skills">
       <div class="container-skills">
         <div>
-          <h1 style="text-align: left; color: #A5D7E8;" >
+          <h1>
             <i class="fa-solid fa-user-ninja" style="margin-right: 16px"></i
             >Skills and Technologies
           </h1>
-          <p style="color: #576CBC;">
+          <p>
             Using a combination of cutting-edge technologies and reliable
             open-source software, I build user-focused, performant apps and
             websites for smartphones, tablets, and desktops.
@@ -87,7 +89,7 @@
             <p>CSS</p>
           </div>
           <div class="skill">
-            <i class="fa-brands fa-wordpress fa-2xl"></i>
+            <i class="fa-brands fa-wordpress fa-2xl" style="color: #74C0FC;"></i></i>
             <p>Wordpress</p>
           </div>
         </div>
@@ -114,5 +116,5 @@
       </div>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

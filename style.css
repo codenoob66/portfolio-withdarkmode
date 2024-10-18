@@ -10,6 +10,8 @@
   --clr-neutral-900: hsl(0 0% 0%);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap');
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -24,9 +26,19 @@ body {
   scroll-behavior: smooth;
 }
 
-h1,
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: 700;
+  text-align: left;
+  margin: var(--margin-primary);
+}
+
 p {
-  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem; /* Adjust size as needed */
+  font-weight: 400;
+  text-align: left;
   margin: var(--margin-primary);
 }
 
@@ -181,7 +193,6 @@ a {
   left: 0; /* Align to the left */
   width: auto; /* Adjust width to fit content */
   padding-left: 10px;
-  margin-left: 20px;
 }
 
 .social-icons {
@@ -195,16 +206,17 @@ color: black;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
 .sticky-footer {
-  background-color: #333;
   color: white;
-  position: absolute; /* Change to absolute */
+  position: relative;
   width: auto; /* Adjust width to fit content */
   padding: 10px 20px;
   bottom: 0;
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust position to truly center */
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons {
@@ -238,4 +250,71 @@ button {
   cursor: pointer; /* Keep cursor pointer */
 }
 
-/* Also, apply styles to the icon */
+body {
+  transition: background-color 0.6s, color 0.6s;
+}
+
+body.night-mode {
+  background-color: var(--clr-neutral-900); /* Dark background */
+  color: var(--clr-accent-100); /* Light text */
+}
+
+.primary-header {
+  background-color: rgb(255, 255, 255); /* Light header */
+  transition: background-color 0.3s;
+}
+
+body.night-mode .primary-header {
+  background-color: #343a40; /* Dark header */
+}
+
+.nav-list a {
+  color: black;
+  transition: color 0.3s;
+}
+
+body.night-mode .nav-list a {
+  color: white; /* Light link color */
+}
+
+footer {
+  background-color: rgb(255, 255, 255); /* Light footer */
+  transition: background-color 0.9s;
+}
+
+.skills-icons {
+  background-color: rgb(247, 242, 236); /* Light skill icons background */
+}
+
+.social-icons a {
+  color: black;
+}
+
+body.night-mode .social-icons a {
+  color: white; /* Light color for social icons */
+}
+
+body.night-mode .introduction_about h1 {
+  color: white; /* Change the text color to white in night mode */
+}
+
+body.night-mode .skills-icons p {
+  color: black; /* Change the text color to white in night mode */
+}
+
+.caret {
+  display: inline;
+  animation: blink 1s step-end infinite;
+  color: #39ff14
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+
+body.night-mode .home-img img {
+  box-shadow: 0 0 15px #39ff14;
+}
