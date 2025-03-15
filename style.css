@@ -12,10 +12,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   box-sizing: border-box;
   height: 100%;
+
 }
 
 * {
@@ -186,13 +191,14 @@ a {
 }
 
 .sticky-footer {
-  background-color: transparent;
+  background-color: gray;
   color: white;
-  position: absolute; /* Change to absolute */
+  position: sticky; /* Change to absolute */
+  top: 0;
   bottom: 0;
   left: 0; /* Align to the left */
-  width: auto; /* Adjust width to fit content */
-  padding-left: 10px;
+  width: 20px; /* Adjust width to fit content */
+  padding: 10px;
 }
 
 .social-icons {
@@ -277,6 +283,15 @@ body.night-mode .nav-list a {
   color: white; /* Light link color */
 }
 
+
+#horizontal {
+  border: 1px solid black;
+}
+
+body.night-mode #horizontal {
+  border: 1px solid green;
+}
+
 footer {
   background-color: rgb(255, 255, 255); /* Light footer */
   transition: background-color 0.9s;
@@ -317,4 +332,24 @@ body.night-mode .skills-icons p {
 
 body.night-mode .home-img img {
   box-shadow: 0 0 15px #39ff14;
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-container h1 {
+  text-align: center;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  height: 350px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
