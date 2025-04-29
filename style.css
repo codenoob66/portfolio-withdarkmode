@@ -124,8 +124,10 @@ a {
 }
 
 .skills-icons {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-around; /* Space out the icons */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  grid-template-rows: repeat(4, auto); /* Create 4 rows with automatic height */
+  gap: var(--margin-primary); /* Add spacing between grid items */
   margin-top: var(--margin-primary); /* Add space above the icons */
 }
 
